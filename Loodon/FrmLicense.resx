@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>
+ THIS AGREEMENT is entered into as of/from 25th April 2013 ("Effective Date") by and between KRAYKNOT &amp; RESEARCH, with users(“LICENSEE”) registered with krayknot("LICENSOR"). 
+WHEREAS, Licensee wishes to license software for the purpose of their own use and krayknot desires to license this software to licensee. NOW THEREFORE, the parties hereto agree as follows: 1. GRANT OF LICENSE 
+Subject to the terms and conditions of the Agreement, krayknot grants to Licensee a non-exclusive, non-transferable license to use the software identified in Exhibit A (the "Licensed Programs") for the purpose of personal use. Licensee may use the Licensed Programs in executable format for its own use, and may translate or modify the licensed programs or incorporate them into other software. Licensee may not, however, transfer or sublicense the Licensed Programs to any third party, in whole or in part, in any form, whether modified or unmodified. 
+2. CONSIDERATION TO krayknot a. Licensee shall pay, upon delivery of the Licensed Programs, the license fees set forth in Exhibit A attached hereto. b. License fees(conditional - please check more on website on product page) do not include any shipping, duties, bank fees, sales, use, excise or similar taxes due. If Licensor is required to pay any such amounts, Licensee shall reimburse Licensor in full. 3. COPIES 
+Licensee may make copies of the Licensed Program in executable code form as necessary for use by Licensee and for backup or archive purposes. Licensee agrees to maintain records of the location and use of each copy, in whole or in part, of the Licensed Programs. Each Licensed Program is copyrighted but unpublished by krayknot. Licensee agrees to reproduce and apply the copyright notice and proprietary notice of krayknot to all copies made hereunder, in whole or in part and in any form, of Licensed Programs. 4. OWNERSHIP 
+The original and any copies of the Licensed Programs, made by Licensee, including translations, compilations, partial copies, modifications, and updates, are the property of krayknot. 5. PROPRIETARY RIGHTS 
+Licensee recognizes that krayknot regards the Licensed Programs as its proprietary information and as confidential trade secrets of great value. Licensee agrees not to provide or to otherwise make available in any form the Licensed Programs, or any portion thereof, to any person other than employees of Licensee without the prior written consent of krayknot. Licensee further agrees to treat the Licensed Programs with at least the same degree of care with which Licensee treats its own confidential information and in no event with less care than is reasonably required to protect the confidentiality of the Licensed Programs. 6. TERM The license granted hereunder shall continue unless and until terminated by krayknot. 
+7. TERMINATION krayknot may terminate this Agreement if Licensee is in default of any of the terms and conditions of this Agreement and fails to correct such default within ten (10) days after written notice thereof from krayknot. 8. TERMINATION CERTIFICATE In the event of termination, Licensee will immediately discontinue use of the Licensed Programs. Within one (1) month after termination of this Agreement, Licensee will furnish to krayknot a certificate which certifies with respect to each of the Licensed Programs that, through its best effort and to the best of its knowledge, the original and all copies, in whole or in part and in any form, of each of the Licensed Programs have been destroyed. 9. MAINTENANCE SUPPORT{only for paid customers} Licensor will provide to Licensee the following support with respect to the Software: (i) If during the 1st year of this Agreement, Licensee notifies Licensor of a substantial program error respecting the Software, or Licensor has reason to believe that error exists in the Software and so notifies Licensee, Licensor shall at its expense verify and attempt to correct such error within thirty (30) working days after the date of notification. 10. DELIVERY OF LICENSED PROGRAMS krayknot shall use its best efforts to deliver the Licensed Programs promptly after receipt of the purchase order and export license (if required). 11. WARRANTY DISCLAIMER krayknot licenses, and Licensee accepts, the licensed programs "AS IS." KRAYKNOT PROVIDES NO WARRANTIES AS TO THE FUNCTION OR USE OF THE LICENSED PROGRAMS, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE LICENSED PROGRAM IS WITH LICENSEE. LICENSOR DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE LICENSED PROGRAMS WILL MEET LICENSEE'S REQUIREMENTS OR THAT THE OPERATION OF THE LICENSED PROGRAMS WILL BE UNINTERRUPTED OR ERROR FREE. 12. PATENT AND COPYRIGHT INDEMNITY Working on this section 13. LIMITATION OF LIABILITY 
+Krayknot’S LIABILITY TO LICENSEE UNDER ANY PROVISIONS OF THIS AGREEMENT FOR DAMAGES FINALLY AWARDED SHALL BE LIMITED TO THE AMOUNTS ACTUALLY PAID HEREUNDER BY LICENSEE TO krayknot. IN NO EVENT SHALL NEAR BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES, INCLUDING LOSS OF USE, LOSS OF PROFITS OR INTERRUPTION OF BUSINESS, HOWEVER CAUSED OR ON ANY THEORY OF LIABILITY. 14. NOTICES All notices in connection with this Agreement shall be in writing and may be given by certified, registered, or first class mail or personally delivered at the address set forth on the front page. For purposes of this Agreement, a notice shall be deemed effective upon personal delivery to the party or if by mail five days after proper deposit in a mail box. 15. SUCCESSORS This Agreement will be binding upon and will inure to the benefit of the parties hereto and their respective representatives, successors and assigns except as otherwise provided herein. 
+16. SEVERABILITY In the event any provision of this Agreement is determined to be invalid or unenforceable, the remainder of this Agreement shall remain in force as if such provision were not a part. 17. GOVERNING LAW/FORUM This Agreement shall be governed and interpreted by the laws of India. 18. NON-ASSIGNMENT 
+This Agreement and the licenses granted by it may not be assigned, sublicensed, or otherwise transferred by Licensee without the prior written consent of krayknot and all other applicable export regulations. Licensee agrees to indemnify and hold krayknot harmless from any loss, damages, liability or expenses incurred by krayknot as a result of Licensee's failure to comply with any export regulations or restrictions. 20. ENTIRE AGREEMENT 
+This Agreement sets forth the entire understanding between the parties with respect to the subject matter hereof, and merges and supersedes all prior agreements, discussions and understandings, express or implied, concerning such matters. This Agreement shall take precedence over any additional or conflicting terms which may be contained in Licensee's purchase order or krayknot's order acknowledgment forms. IN WITNESS WHEREOF, the parties have caused this Agreement to be executed as of the Effective Date. 
+</value>
+  </data>
+</root>

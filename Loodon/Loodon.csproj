@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{983F5488-BDEA-40FD-AA28-CE7E73F9AA89}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Loodon</RootNamespace>
+    <AssemblyName>Loodon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClsCommon.cs" />
+    <Compile Include="ExportToExcel.cs" />
+    <Compile Include="FrmAboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAboutUs.designer.cs">
+      <DependentUpon>FrmAboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddColumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddColumn.Designer.cs">
+      <DependentUpon>FrmAddColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgreement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgreement.Designer.cs">
+      <DependentUpon>FrmAgreement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAttachDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAttachDatabase.designer.cs">
+      <DependentUpon>FrmAttachDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBackup.designer.cs">
+      <DependentUpon>FrmBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmColumnProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmColumnProperties.Designer.cs">
+      <DependentUpon>FrmColumnProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateAppUpdateDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreateAppUpdateDetails.Designer.cs">
+      <DependentUpon>FrmCreateAppUpdateDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreateDatabase.designer.cs">
+      <DependentUpon>FrmCreateDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateLinkedServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreateLinkedServer.designer.cs">
+      <DependentUpon>FrmCreateLinkedServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreateReports.designer.cs">
+      <DependentUpon>FrmCreateReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatabaseBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatabaseBackup.designer.cs">
+      <DependentUpon>FrmDatabaseBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditRecords.Designer.cs">
+      <DependentUpon>FrmEditRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExcelExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExcelExport.designer.cs">
+      <DependentUpon>FrmExcelExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExportData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExportData.designer.cs">
+      <DependentUpon>FrmExportData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExportReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExportReport.designer.cs">
+      <DependentUpon>FrmExportReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGoto.designer.cs">
+      <DependentUpon>FrmGoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHorizontalRow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHorizontalRow.designer.cs">
+      <DependentUpon>FrmHorizontalRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLicense.Designer.cs">
+      <DependentUpon>FrmLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLoginHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLoginHistory.designer.cs">
+      <DependentUpon>FrmLoginHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOptions.designer.cs">
+      <DependentUpon>FrmOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOutputWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOutputWindow.designer.cs">
+      <DependentUpon>FrmOutputWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuestions.Designer.cs">
+      <DependentUpon>FrmQuestions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistrationDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrationDetails.Designer.cs">
+      <DependentUpon>FrmRegistrationDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSearchonColumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearchonColumn.Designer.cs">
+      <DependentUpon>FrmSearchonColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSeparateResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSeparateResults.designer.cs">
+      <DependentUpon>FrmSeparateResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSQLtoAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSQLtoAccess.Designer.cs">
+      <DependentUpon>FrmSQLtoAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSync.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSync.designer.cs">
+      <DependentUpon>FrmSync.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSyncWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSyncWindow.designer.cs">
+      <DependentUpon>FrmSyncWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTableDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTableDesign.designer.cs">
+      <DependentUpon>FrmTableDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTablefromColumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTablefromColumn.Designer.cs">
+      <DependentUpon>FrmTablefromColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTakingBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTakingBackup.designer.cs">
+      <DependentUpon>FrmTakingBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ICommonFunctions.cs" />
+    <Compile Include="NumberedTextBoxUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NumberedTextBoxUC.designer.cs">
+      <DependentUpon>NumberedTextBoxUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QueryEditor.designer.cs">
+      <DependentUpon>QueryEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterApplication\frmUserInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterApplication\frmUserInformation.Designer.cs">
+      <DependentUpon>frmUserInformation.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmAboutUs.resx">
+      <DependentUpon>FrmAboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddColumn.resx">
+      <DependentUpon>FrmAddColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgreement.resx">
+      <DependentUpon>FrmAgreement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAttachDatabase.resx">
+      <DependentUpon>FrmAttachDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBackup.resx">
+      <DependentUpon>FrmBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmColumnProperties.resx">
+      <DependentUpon>FrmColumnProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreateAppUpdateDetails.resx">
+      <DependentUpon>FrmCreateAppUpdateDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreateDatabase.resx">
+      <DependentUpon>FrmCreateDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreateReports.resx">
+      <DependentUpon>FrmCreateReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatabaseBackup.resx">
+      <DependentUpon>FrmDatabaseBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditRecords.resx">
+      <DependentUpon>FrmEditRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExcelExport.resx">
+      <DependentUpon>FrmExcelExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExportData.resx">
+      <DependentUpon>FrmExportData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExportReport.resx">
+      <DependentUpon>FrmExportReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGoto.resx">
+      <DependentUpon>FrmGoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHorizontalRow.resx">
+      <DependentUpon>FrmHorizontalRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLicense.resx">
+      <DependentUpon>FrmLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLoginHistory.resx">
+      <DependentUpon>FrmLoginHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOptions.resx">
+      <DependentUpon>FrmOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOutputWindow.resx">
+      <DependentUpon>FrmOutputWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQuestions.resx">
+      <DependentUpon>FrmQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrationDetails.resx">
+      <DependentUpon>FrmRegistrationDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSearchonColumn.resx">
+      <DependentUpon>FrmSearchonColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSeparateResults.resx">
+      <DependentUpon>FrmSeparateResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSQLtoAccess.resx">
+      <DependentUpon>FrmSQLtoAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSync.resx">
+      <DependentUpon>FrmSync.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSyncWindow.resx">
+      <DependentUpon>FrmSyncWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTableDesign.resx">
+      <DependentUpon>FrmTableDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTablefromColumn.resx">
+      <DependentUpon>FrmTablefromColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTakingBackup.resx">
+      <DependentUpon>FrmTakingBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberedTextBoxUC.resx">
+      <DependentUpon>NumberedTextBoxUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="QueryEditor.resx">
+      <DependentUpon>QueryEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterApplication\frmUserInformation.resx">
+      <DependentUpon>frmUserInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Visualpharm-Icons8-Metro-Style-Data-Database.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LoodonDAL\LoodonDAL.csproj">
+      <Project>{3ac38f3b-dc71-457c-b50d-a07e87aa7ee7}</Project>
+      <Name>LoodonDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

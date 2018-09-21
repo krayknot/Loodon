@@ -1,0 +1,6 @@
+﻿namespace LoodonDAL
+{
+    interface ICommonFunctions
+    {
+    }
+}

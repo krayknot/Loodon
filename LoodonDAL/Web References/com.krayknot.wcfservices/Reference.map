@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://wcfservices.krayknot.com/ServiceInsert.svc?wsdl" filename="ServiceInsert.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://wcfservices.krayknot.com/ServiceInsert.svc?xsd=xsd0" filename="ServiceInsert.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://wcfservices.krayknot.com/ServiceInsert.svc?xsd=xsd1" filename="ServiceInsert0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://wcfservices.krayknot.com/ServiceInsert.svc?xsd=xsd2" filename="ServiceInsert1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://wcfservices.krayknot.com/ServiceInsert.svc?disco" filename="ServiceInsert.disco" />
+  </Results>
+</DiscoveryClientResultsFile>
